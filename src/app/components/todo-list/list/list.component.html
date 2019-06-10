@@ -3,7 +3,7 @@
     <li class="alert"
         [ngClass="{'alert-success': items.completed, 'alert-info': !items.completed)"
         ]
-        *ngFor="let item of items">
+        *ngFor="let item of todoItems">
 
       <input type="button"
              (click)="markComplete(item)"
@@ -15,6 +15,6 @@
   </ul>
   <input type="button"
          (click)="clearCompleted()"
-         class="btn btn-sm btn-danger"
+         class="btn btn-lg btn-primary"
          value="Clear Completed">
 </div>

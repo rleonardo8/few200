@@ -14,7 +14,7 @@ export class EntryComponent implements OnInit {
   add(what: HTMLInputElement) {
     this.itemAdded.emit(what.value);
     what.value = '';
-    what.value();
+    what.focus();
 
   }
 }
